@@ -1,0 +1,2 @@
+python,scanpy,cpu_count,ram_total_gb,local_disk_free_gb
+3.13.15,1.12.4,24,50.5,220.4
