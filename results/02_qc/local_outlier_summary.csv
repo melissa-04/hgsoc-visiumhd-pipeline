@@ -1,0 +1,3 @@
+tissue_class,n_bins,flag_low_umi,flag_high_umi,flag_high_mt,fixed_thr_low(<200)
+dense,408117,1946,992,4362,17443
+pale,37634,158,14,412,6535
