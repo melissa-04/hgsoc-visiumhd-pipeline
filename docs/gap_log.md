@@ -14,3 +14,7 @@
 | 03 | ENACT | not run | - | planned; same StarDist base, alternative bin assignment |
 | 03 | FICTURE | not run | - | expected days on 7M bins; not feasible on Colab |
 | 03 | contamination-vs-distance, registration shift test | custom | seconds-minutes | no existing tool reports spillover scale or bin-grid registration QC |
+| 04 | scanpy Pearson residuals (441k bins, 2,000 HVG dense) | yes | ~1 min, 3.6 GB | NaN for zero-count units; wrapper PCA fails on NaN -> compute PCA manually |
+| 04 | scVI 1.5 via scvi-colab (190k cells) | yes | 2.4 min on A100 | fine; representation-dependent clusters |
+| 04 | squidpy spatial_autocorr | API changed (n_perms=0 rejected, spatial_neighbors deprecated) | - | computed Moran's I manually (kNN weights) |
+| 04 | scran / sctransform | not run (R) | - | logged for R session |
