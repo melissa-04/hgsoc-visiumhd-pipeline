@@ -22,3 +22,6 @@
 | 05a | scANVI joint model (ref+query, tech as batch) | ran but wrong | 7 min | over-integration: query spread over rare classes |
 | 05a | scANVI reference + query mapping (scArches) | yes | 2.6 + 2.1 min | works; still 66% of CD68+ cells labelled tumor (spillover) |
 | 05a | Tangram, RCTD (cell level) | not run | - | logged |
+| 05b | cell2location RegressionModel (90k ref) | yes | 38 min A100 | slow (data loading); run once and cache signatures |
+| 05b | cell2location spatial model (60k of 441k 8 µm bins) | yes | 16 min + 2.5 min posterior | under-trained at 2,500 epochs; full slide ~2 h; cannot separate spillover from co-occupancy |
+| 05b | RCTD doublet mode (R) | not run | - | logged for R session |

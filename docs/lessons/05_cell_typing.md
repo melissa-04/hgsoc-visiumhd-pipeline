@@ -24,4 +24,20 @@
 ### Decision
 - Primary labels: ct_scanvi (query-mapped); secondary: ct_celltypist; flags: label_agree, macrophage_candidate. Saved in processed/cells_bin2cell_typed.h5ad.
 
-## Part B: bin-level deconvolution (05b) — pending
+## Part B: bin-level deconvolution (05b_bin_deconvolution.ipynb)
+
+### What we did
+- cell2location RegressionModel on the 90k reference (donor as batch, 14,871 genes after filter): 250 epochs, 37.7 min on A100 (data-loading bound). Signatures correct (WFDC2 tumor 46.8 vs fibroblast 0.9; COL1A1 fibroblast 164; CD68 monocyte 8.3).
+- Cell2location on a random 60,000-bin subsample of 8 µm bins (13,203 genes), N_cells_per_location=1, detection_alpha=20, 2,500 epochs (16 min); ELBO still decreasing at stop (under-trained; recommended 10-30k epochs).
+
+### Key numbers
+- Dominant type per bin: tumor 83%, fibroblast 10.7%, endothelial 4.9%, monocyte 1.1%. Total abundance per 8 µm bin: median 0.64 cells.
+- Agreement between bin dominant type and nearest scANVI cell label (cell within 8 µm, 71.5% of bins): 93.8% overall; tumor 98%, endothelial 79%, fibroblast 72%, monocyte 61%.
+- Mixed bins (2nd type > 30% of 1st): 49% overall; fibroblast-dominant 82%, endothelial 89%, monocyte 89%, tumor 42%.
+
+### Lessons
+- Two independent routes (segmentation + classifier vs deconvolution) agree on major compartments; disagreement concentrates in sparse types and boundaries.
+- Half of all 8 µm bins are mixtures; stromal bins almost always carry tumor signal. Deconvolution quantifies mixing but cannot tell physical spillover from true co-occupancy.
+- Use abundance vectors, not dominant labels, for any bin-level downstream analysis.
+- Train cell2location to convergence (watch the ELBO curve), not to a time budget; full-slide run (~2 h on A100) reserved for project data.
+- Compare categorical labels from different sources as strings (pandas refuses to compare categoricals with different category sets).
