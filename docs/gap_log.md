@@ -25,3 +25,7 @@
 | 05b | cell2location RegressionModel (90k ref) | yes | 38 min A100 | slow (data loading); run once and cache signatures |
 | 05b | cell2location spatial model (60k of 441k 8 µm bins) | yes | 16 min + 2.5 min posterior | under-trained at 2,500 epochs; full slide ~2 h; cannot separate spillover from co-occupancy |
 | 05b | RCTD doublet mode (R) | not run | - | logged for R session |
+| 06 | composition niches + permutation enrichment (custom) | yes | 3 min | no tool combines HD-scale composition niches with rare-niche detection |
+| 06 | pybanksy 1.3.5 (190k cells, 1,000 HVG) | yes | 2.7 min | API mismatch between generate_banksy_matrix and banksy_matrix_to_adata; small island clusters need merging |
+| 06 | cellcharter 0.3.7 (scVI latent, 3 layers, GMM) | yes | 5 min scan | ClusterAutoK gives no progress; manual stability scan used |
+| 06 | within-tumour domains | all methods | - | no tool separates biological programs from spillover/technical gradients; needs CNV/H&E cross-check |
