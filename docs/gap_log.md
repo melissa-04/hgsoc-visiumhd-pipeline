@@ -29,3 +29,6 @@
 | 06 | pybanksy 1.3.5 (190k cells, 1,000 HVG) | yes | 2.7 min | API mismatch between generate_banksy_matrix and banksy_matrix_to_adata; small island clusters need merging |
 | 06 | cellcharter 0.3.7 (scVI latent, 3 layers, GMM) | yes | 5 min scan | ClusterAutoK gives no progress; manual stability scan used |
 | 06 | within-tumour domains | all methods | - | no tool separates biological programs from spillover/technical gradients; needs CNV/H&E cross-check |
+| 07 | infercnvpy (190k cells, 17.5k genes) | yes | 1 min (8 jobs) / 6 min (1 job) | fork pool deadlocks subsequent numba/BLAS in-session; gtfparse optional dep broken -> parse GTF manually; Arrow strings break windows |
+| 07 | clone detection (PCA + k-means, silhouette) | custom | <1 min | no discrete clones; no tool separates dilution from subclonality in HD |
+| 07 | CopyKAT / SCEVAN (R), Numbat / CalicoST (allele) | not run | - | R session; allele methods need HD 3' chemistry |
