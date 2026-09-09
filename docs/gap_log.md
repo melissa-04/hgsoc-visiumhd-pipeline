@@ -18,3 +18,7 @@
 | 04 | scVI 1.5 via scvi-colab (190k cells) | yes | 2.4 min on A100 | fine; representation-dependent clusters |
 | 04 | squidpy spatial_autocorr | API changed (n_perms=0 rejected, spatial_neighbors deprecated) | - | computed Moran's I manually (kNN weights) |
 | 04 | scran / sctransform | not run (R) | - | logged for R session |
+| 05a | CellTypist 1.x (90k ref, 190k query) | yes (sklearn fallback) | train 8 min, predict 1.5 min | RAPIDS import breaks under pandas 3; probabilities saturate |
+| 05a | scANVI joint model (ref+query, tech as batch) | ran but wrong | 7 min | over-integration: query spread over rare classes |
+| 05a | scANVI reference + query mapping (scArches) | yes | 2.6 + 2.1 min | works; still 66% of CD68+ cells labelled tumor (spillover) |
+| 05a | Tangram, RCTD (cell level) | not run | - | logged |

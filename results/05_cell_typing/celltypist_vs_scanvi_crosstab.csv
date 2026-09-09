@@ -1,0 +1,8 @@
+ct_celltypist,B.cell,Endothelial.cell,Fibroblast,Mast.cell,Monocyte,Ovarian.cancer.cell,Plasma.cell,T.cell
+B.cell,5,4,4,26,15,27,15,19
+Endothelial.cell,2,3072,1178,5,140,211,120,16
+Fibroblast,2,646,14426,1,95,556,108,3
+Monocyte,0,0,0,0,155,0,4,1
+Ovarian.cancer.cell,17,575,3170,87,847,164347,175,77
+Plasma.cell,2,1,6,1,54,28,145,11
+T.cell,0,0,0,0,0,0,0,3

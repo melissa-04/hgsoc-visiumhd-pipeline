@@ -1,0 +1,8 @@
+,predicted,majority_voting,frac_predicted
+B.cell,115,0,0.001
+Endothelial.cell,4744,3314,0.025
+Fibroblast,15837,16490,0.083
+Monocyte,160,299,0.001
+Ovarian.cancer.cell,169295,170299,0.889
+Plasma.cell,248,0,0.001
+T.cell,3,0,0.0
