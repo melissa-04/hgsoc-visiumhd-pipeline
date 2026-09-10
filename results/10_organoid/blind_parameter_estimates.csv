@@ -1,0 +1,4 @@
+parameter,estimated,true
+ambient_per_bin,0.383,0.364
+lambda_forward_fit,2.5,4.0
+lambda_naive_decay,9.2,4.0

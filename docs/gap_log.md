@@ -43,3 +43,7 @@
 | 10a | organoid HD simulator (PSF + ambient + striping + Poisson, full ground truth) | custom | seconds-minutes | no public tool simulates HD measurement physics for organoid geometry |
 | 10a | PSF calibration against a measured contamination curve | custom | 3 min | no tool estimates per-cell PSF from HD data; edge-decay length is not the PSF width |
 | 10a | per-organoid signal budget, edge-core artefact quantification | custom | 3 min | not reported anywhere; directly affects organoid regional analysis |
+| 10b | organoid detection from counts (Otsu + connected components) | custom | 2 min | area metrics misleading; diameter biased +20 µm for small organoids |
+| 10b | edge-gradient quantification at cell and bin level | custom | 5 min | no tool reports it; 'genes per cell' inflated by spillover in dense regions |
+| 10b | blind estimation of ambient / PSF / striping | custom | 5 min | feasible (ambient 5% error, PSF right order); naive edge-decay overestimates PSF 2.3x |
+| 10b | per-organoid pseudobulk + PyDESeq2 (24 samples) | yes | 5 min | calibrated; size effect absorbed by size factors |
