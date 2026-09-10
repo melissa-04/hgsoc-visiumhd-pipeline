@@ -40,3 +40,6 @@
 | 09 | CellTypist transfer at two depths | yes | 3 min | 95.4% per-cell agreement but composition shifts; rare classes act as sinks |
 | 09 | decoupler-style pseudobulk (custom) + PyDESeq2 | yes | 5 min in subprocess | dispersion fit fails with 8 samples; null test shows 0.5-2% false positives |
 | 09 | scCODA composition test, DESpace2 (spatial pattern DE), Harmony/scVI integration benchmark | not run | - | logged; needs true multi-sample data |
+| 10a | organoid HD simulator (PSF + ambient + striping + Poisson, full ground truth) | custom | seconds-minutes | no public tool simulates HD measurement physics for organoid geometry |
+| 10a | PSF calibration against a measured contamination curve | custom | 3 min | no tool estimates per-cell PSF from HD data; edge-decay length is not the PSF width |
+| 10a | per-organoid signal budget, edge-core artefact quantification | custom | 3 min | not reported anywhere; directly affects organoid regional analysis |
