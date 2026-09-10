@@ -1,0 +1,7 @@
+cell_type,n_cells,pearson_logCPM,genes_detected_deep,genes_detected_min
+B.cell,293,0.4568,6485,3330
+Endothelial.cell,4862,0.9967,15941,15236
+Fibroblast,17883,0.9991,16719,16128
+Monocyte,154,0.8195,11846,9660
+Ovarian.cancer.cell,160008,0.9997,17914,17510
+Plasma.cell,239,0.6762,10021,6937

@@ -36,3 +36,7 @@
 | 08 | LIANA+ bivariate Moran's R (60k cells, 490 pairs) | yes | 5.2 min | local scores returned sparse (toarray needed); negative pairs masked |
 | 08 | spillover control (interior-only rerun) | custom | 3 min | not usable in papillary tissue (no stroma >32 µm from tumour); needs correction tool or wider compartments |
 | 08 | CellChat v2 spatial (R), SpatialDM standalone | not run | - | Moran's R already covered via LIANA+; R session |
+| 09 | metrics comparison deep vs min depth | custom | minutes | saturation explains non-linear UMI loss; no tool reports depth-sensitivity of downstream steps |
+| 09 | CellTypist transfer at two depths | yes | 3 min | 95.4% per-cell agreement but composition shifts; rare classes act as sinks |
+| 09 | decoupler-style pseudobulk (custom) + PyDESeq2 | yes | 5 min in subprocess | dispersion fit fails with 8 samples; null test shows 0.5-2% false positives |
+| 09 | scCODA composition test, DESpace2 (spatial pattern DE), Harmony/scVI integration benchmark | not run | - | logged; needs true multi-sample data |

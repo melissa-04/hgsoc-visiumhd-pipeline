@@ -1,0 +1,8 @@
+,B.cell,Endothelial.cell,Fibroblast,Monocyte,Ovarian.cancer.cell,Plasma.cell,T.cell
+B.cell,285,0,0,0,6,2,0
+Endothelial.cell,63,3219,619,4,911,46,0
+Fibroblast,38,1203,12977,0,3611,54,0
+Monocyte,13,13,1,66,22,39,0
+Ovarian.cancer.cell,850,184,535,9,158285,145,0
+Plasma.cell,101,0,2,0,19,117,0
+T.cell,3,0,0,0,0,1,0

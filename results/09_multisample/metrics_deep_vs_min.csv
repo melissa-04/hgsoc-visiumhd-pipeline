@@ -1,0 +1,48 @@
+,deep,min,ratio_min_over_deep
+Sample ID,Visium_HD_Human_Ovarian_Cancer_FF,Visium_HD_Human_Ovarian_Cancer_FF_Min_Depth,
+Number of Reads,2316175740.0,441497890.0,0.191
+Valid Barcodes,0.8730858363105038,0.872574240388782,0.999
+Valid UMI Sequences,0.9988138529591888,0.9983974124995252,1.0
+Sequencing Saturation,0.5639903502111691,0.2352505070947594,0.417
+Q30 Bases in Barcode,0.9751844428496252,0.97541311493671,1.0
+Q30 Bases in Probe Read,0.9758552336843108,0.9750723168456232,0.999
+Q30 Bases in UMI,0.96900318589165,0.9688119129125156,1.0
+Reads Mapped to Probe Set,0.9763474787107476,0.9755178422257011,0.999
+Reads Mapped Confidently to Probe Set,0.9748035047634166,0.973960256072798,0.999
+Fraction Reads in Squares Under Tissue,0.970503248779334,0.9705353743846906,1.0
+Genes Detected,17965.0,17628.0,0.981
+Reads Mapped Confidently to the Filtered Probe Set,0.959696222791799,0.9588661952608653,0.999
+Number of Genes,18132.0,18132.0,1.0
+Reads Half-Mapped to Probe Set,0.0013316843565592,0.0013462714397117,1.011
+Reads Split-Mapped to Probe Set,0.0002122895907717,0.0002113147131914,0.995
+Estimated UMIs from Genomic DNA,0.0003500105634251,0.0007079457288988,2.023
+Estimated UMIs from Genomic DNA per Unspliced Probe,7.0,5.0,0.714
+Number of Squares Under Tissue 2 µm,7024813.0,7024813.0,1.0
+Mean Reads Under Tissue per Square 2 µm,329.71350838805245,62.84834770690693,0.191
+Fraction of Squares Under Tissue 2 µm,0.6259579416351081,0.6259579416351081,1.0
+Mean Genes Under Tissue per Square 2 µm,105.950696054115,36.95477602037138,0.349
+Mean UMIs Under Tissue per Square 2 µm,114.16044754501114,38.23685384935349,0.335
+Total Genes Detected Under Tissue 2 µm,17965.0,17628.0,0.981
+Number of Bins Under Tissue 8 µm,445751.0,445751.0,1.0
+Mean Reads Under Tissue per Bin 8 µm,5196.120120874659,990.4585519718408,0.191
+Fraction of Bins Under Tissue 8 µm,0.634752308314489,0.634752308314489,1.0
+Mean Genes Under Tissue per Bin 8 µm,1259.652806163035,496.0372853902781,0.394
+Mean UMIs Under Tissue per Bin 8 µm,1810.1004708907496,606.2760958472287,0.335
+Total Genes Detected Under Tissue 8 µm,17966.0,17630.0,0.981
+UMIs per sq mm of Tissue,28282819.857667964,9473063.99761295,0.335
+Reads per sq mm of Tissue,69212365.09424545,13185464.565699236,0.191
+Number of Bins Under Tissue 16 µm,113644.0,113644.0,1.0
+Mean Reads Under Tissue per Bin 16 µm,20380.976910351623,3884.920365351448,0.191
+Fraction of Bins Under Tissue 16 µm,0.6473191654182877,0.6473191654182877,1.0
+Mean Genes Under Tissue per Bin 16 µm,3401.1868994403985,1575.879993664422,0.463
+Mean UMIs Under Tissue per Bin 16 µm,7142.919775791001,2392.4643447960466,0.335
+Total Genes Detected Under Tissue 16 µm,17967.0,17632.0,0.981
+Number of Cells,183450.0,183449.0,1.0
+Reads in Cells,0.7,0.7,1.0
+UMIs in Cells,0.8471,0.8471,1.0
+Mean Reads per Cell,9337.1,1778.8,0.191
+Median Genes per Cell,2129.0,864.0,0.406
+Median UMIs per Cell,3277.0,1097.0,0.335
+Median Cell Area (μm²),112.0,112.0,1.0
+Median Nucleus Area (μm²),28.0,28.0,1.0
+Maximum Nucleus Diameter (pixels),256.0,256.0,1.0
