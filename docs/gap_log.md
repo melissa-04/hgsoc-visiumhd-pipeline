@@ -47,3 +47,6 @@
 | 10b | edge-gradient quantification at cell and bin level | custom | 5 min | no tool reports it; 'genes per cell' inflated by spillover in dense regions |
 | 10b | blind estimation of ambient / PSF / striping | custom | 5 min | feasible (ambient 5% error, PSF right order); naive edge-decay overestimates PSF 2.3x |
 | 10b | per-organoid pseudobulk + PyDESeq2 (24 samples) | yes | 5 min | calibrated; size effect absorbed by size factors |
+| 10c | Richardson-Lucy / EM spillover correction (totals) | custom | seconds | works: edge gradient removed, 70% of scale error corrected, tolerant to 38% PSF error |
+| 10c | EM correction at gene level | custom | 51 min CPU | fails on composition (profile corr 0.815 -> 0.781); needs bins x genes observations, not cell-seeded profiles |
+| 10c | stopping rule for EM | open | - | correlation peaks at ~6 iterations; no ground truth in real data, needs CV or regularisation |
