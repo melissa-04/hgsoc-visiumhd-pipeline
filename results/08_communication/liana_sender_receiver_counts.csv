@@ -1,0 +1,5 @@
+source,Endothelial.cell,Fibroblast,Monocyte,Ovarian.cancer.cell
+Endothelial.cell,14,5,26,5
+Fibroblast,24,2,45,8
+Monocyte,36,34,68,28
+Ovarian.cancer.cell,7,0,20,0

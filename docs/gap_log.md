@@ -32,3 +32,7 @@
 | 07 | infercnvpy (190k cells, 17.5k genes) | yes | 1 min (8 jobs) / 6 min (1 job) | fork pool deadlocks subsequent numba/BLAS in-session; gtfparse optional dep broken -> parse GTF manually; Arrow strings break windows |
 | 07 | clone detection (PCA + k-means, silhouette) | custom | <1 min | no discrete clones; no tool separates dilution from subclonality in HD |
 | 07 | CopyKAT / SCEVAN (R), Numbat / CalicoST (allele) | not run | - | R session; allele methods need HD 3' chemistry |
+| 08 | LIANA+ 1.10 rank_aggregate (44k cells, 5 methods, 1k perms) | yes | 0.9 min | abundance bias; false senders from spillover; rare-type inflation |
+| 08 | LIANA+ bivariate Moran's R (60k cells, 490 pairs) | yes | 5.2 min | local scores returned sparse (toarray needed); negative pairs masked |
+| 08 | spillover control (interior-only rerun) | custom | 3 min | not usable in papillary tissue (no stroma >32 µm from tumour); needs correction tool or wider compartments |
+| 08 | CellChat v2 spatial (R), SpatialDM standalone | not run | - | Moran's R already covered via LIANA+; R session |
